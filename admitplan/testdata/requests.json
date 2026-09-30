@@ -1,0 +1,22 @@
+{
+  "requests": [
+    {"id": "r01", "at_ms": 0, "hold_ms": 200, "results": ["ok"]},
+    {"id": "r02", "at_ms": 60, "hold_ms": 100, "results": ["ok"]},
+    {"id": "r03", "at_ms": 150, "hold_ms": 200, "results": ["ok"]},
+    {"id": "r04", "at_ms": 300, "hold_ms": 1200, "results": ["ok"]},
+    {"id": "r05", "at_ms": 450, "hold_ms": 100, "results": ["ok"]},
+    {"id": "r06", "at_ms": 1000, "hold_ms": 1000, "results": ["flood", "ok"]},
+    {"id": "r07", "at_ms": 1050, "hold_ms": 100, "results": ["ok"]},
+    {"id": "r08", "at_ms": 1500, "hold_ms": 100, "results": ["ok"]},
+    {"id": "r09", "at_ms": 1650, "hold_ms": 100, "results": ["ok"]},
+    {"id": "r10", "at_ms": 2700, "hold_ms": 300, "results": ["ok"]},
+    {"id": "r11", "at_ms": 2950, "hold_ms": 100, "results": ["timeout", "refused"]},
+    {"id": "r12", "at_ms": 3900, "hold_ms": 200, "results": ["flood", "flood", "ok"]},
+    {"id": "r13", "at_ms": 4150, "hold_ms": 100, "results": ["ok"]},
+    {"id": "r14", "at_ms": 5100, "hold_ms": 100, "results": ["ok"]},
+    {"id": "r15", "at_ms": 5400, "hold_ms": 100, "results": ["flood", "flood", "flood"]},
+    {"id": "r16", "at_ms": 6300, "hold_ms": 100, "results": ["ok"]},
+    {"id": "r17", "at_ms": 6600, "hold_ms": 100, "results": ["ok"]},
+    {"id": "r18", "at_ms": 7500, "hold_ms": 100, "results": ["ok"]}
+  ]
+}

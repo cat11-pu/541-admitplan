@@ -1,0 +1,16 @@
+{
+  "rules": [
+    {"id": "burst", "kind": "token_bucket", "capacity": 4, "refill_every_ms": 1200, "cost": 1},
+    {"id": "window", "kind": "sliding_window", "window_ms": 1000, "limit": 3, "cost": 1},
+    {"id": "gap", "kind": "min_interval", "min_interval_ms": 150},
+    {"id": "inflight", "kind": "concurrency", "max_in_flight": 2}
+  ],
+  "backoff": {
+    "base_ms": 200,
+    "cap_ms": 1600,
+    "jitter": "full",
+    "max_attempts": 3,
+    "retryable": ["flood", "timeout"]
+  },
+  "jitter_hex": "0f1e2d3c4b5a69788796a5b4c3d2e1f00f1e2d3c4b5a69788796a5b4c3d2e1f0"
+}
